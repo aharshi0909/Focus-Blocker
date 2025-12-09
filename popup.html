@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Blocker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup-body">
+  <div class="popup-container">
+    <h1 class="popup-title">🎯 Focus Blocker</h1>
+    
+    <div id="timerStatus" class="timer-status">
+      <div id="activeStatus" class="status-active" style="display: none;">
+        <div class="status-text">⏱️ Blocking Active</div>
+        <div id="remainingTime" class="remaining-time">--:--:--</div>
+      </div>
+      <div id="inactiveStatus" class="status-inactive">
+        <div class="status-text">✨ Ready to Focus</div>
+      </div>
+    </div>
+    <div class="timer-buttons">
+      <h3>Start Focus Timer</h3>
+      <div class="button-grid">
+        <button class="timer-btn" data-hours="1">1 hr</button>
+        <button class="timer-btn" data-hours="2">2 hr</button>
+        <button class="timer-btn" data-hours="3">3 hr</button>
+        <button class="timer-btn" data-hours="4">4 hr</button>
+        <button class="timer-btn" data-hours="5">5 hr</button>
+        <button class="timer-btn" data-hours="6">6 hr</button>
+        <button class="timer-btn" data-hours="7">7 hr</button>
+        <button class="timer-btn" data-hours="8">8 hr</button>
+        <button class="timer-btn" data-hours="9">9 hr</button>
+        <button class="timer-btn" data-hours="10">10 hr</button>
+      </div>
+      <button id="stopBtn" class="stop-btn" style="display: none;">Stop Timer</button>
+    </div>
+    
+    <div class="add-site-section">
+      <h3>Quick Add Site</h3>
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="siteInput" 
+          placeholder="example.com"
+          class="site-input"
+        >
+        <button id="addSiteBtn" class="add-btn">Add</button>
+      </div>
+    </div>
+    
+    <div class="allowed-sites-section">
+      <h3>Allowed Sites</h3>
+      <div id="sitesList" class="sites-list">
+      </div>
+      <div id="noSites" class="no-sites">No allowed sites yet</div>
+    </div>
+    
+    <div class="footer">
+      <a href="#" id="optionsLink" class="options-link">⚙️ More Options</a>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
