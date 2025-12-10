@@ -169,10 +169,12 @@ Want to contribute or modify the extension? Here's how to get started:
 
 ## License
 
-This project is open source and available for personal and educational use.
+This project is open source and available for personal and educational use under MIT LICENSE.
 
 ## Credits
 
+README: ChatGPT
+IDEA: JEE
 Created with ❤️ for productivity enthusiasts who want to stay focused and avoid distractions.
 
 ---
